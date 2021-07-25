@@ -1,0 +1,13 @@
+<table id="board">
+    <tbody>
+        {% for row in board %}
+            <tr>
+                {% for spot in row %}
+                    <td>
+                        {{ spot }}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Boggle
+{% endblock title %}
+
+{% block main %}
+    {% include "status.html" %}
+    {% include "board.html" %}
+    <p>Score: <span id="score">0</span></p>
+    <p>High Score: <span id="high-score">{{ score }}</span></p>
+    <p>Number of times played: <span id="played">{{ played }}</span>.</p>
+    {% include "guess.html" %}
+{% endblock main %}
